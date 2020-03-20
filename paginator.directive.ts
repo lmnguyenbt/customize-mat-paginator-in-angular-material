@@ -162,7 +162,6 @@ export class PaginatorDirective implements AfterViewInit, DoCheck {
         this._currentPage = i;
         this.matPag.pageIndex = i;
         this.initPageRange();
-        this.tableService.changePage(i + 1);
     }
 
     public ngAfterViewInit() {
